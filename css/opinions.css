@@ -1,0 +1,202 @@
+.business .business-right .box,
+.politics .politics-right .box,
+.society .society-right .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 328px);
+    grid-gap: 20px;
+    justify-content: center;
+}
+.business .business-right .box .item .date,
+.politics .politics-right .box .item .date,
+.society .society-right .box .item .date {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--gray);
+    margin-bottom: 110px;
+}
+.business .business-right .box .item .arrow .line::before,
+.politics .politics-right .box .item .arrow .line::before,
+.society .society-right .box .item .arrow .line::before {
+    content: '';
+    width: 2px;
+    height: 52px;
+    background: var(--button-arr);
+    position: absolute;
+    left: -149px;
+    top: -205px;
+    transform: rotate(320deg);
+}
+.business .business-right .box .item a,
+.business .business-right .box .item a .link-text,
+.politics .politics-right .box .item a,
+.politics .politics-right .box .item a .link-text,
+.society .society-right .box .item a,
+.society .society-right .box .item a .link-text {
+    font-size: 18px;
+    line-height: 28px;
+    position: relative;
+    max-height: 80px;
+}
+.business .business-right .box .item a .link-text,
+.politics .politics-right .box .item a .link-text,
+.society .society-right .box .item a .link-text {
+    max-width: 249px;
+    display: flex;
+}
+.business .business-right .box .item a .arrow,
+.politics .politics-right .box .item a .arrow,
+.society .society-right .box .item a .arrow {
+    width: 163px;
+    margin-top: 50px;
+    margin-left: auto;
+}
+.business .business-right .box .item .arrow .line::after,
+.politics .politics-right .box .item .arrow .line::after,
+.society .society-right .box .item .arrow .line::after {
+    content: '';
+    width: 2px;
+    height: 37px;
+    background: var(--button-arr);
+    position: absolute;
+    left: -12px;
+    top: -31px;
+    transform: rotate(320deg);
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+@media screen and (max-width: 1700px) {
+    .header .header-right .heading-primary--sub {
+        margin-left: 86px;
+    }
+    .header .header-right .heading-primary--tertiary {
+        font-size: 80px;
+        line-height: 90px;
+        right: unset;
+        top: 235px;
+        margin-left: 140px;
+    }
+    header.opinions .header-right h1,
+    header.opinions .header-right h1 .heading-primary--main {
+        font-size: 123px;
+        line-height: 105px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .business,
+    .politics,
+    .society {
+        grid-template-columns: 100%;
+        text-align: center;
+        row-gap: 40px;
+        margin-bottom: 40px;
+    }
+    .business .business-right,
+    .politics .politics-right,
+    .society .society-right {
+        display: contents;
+    }
+    .business .divider,
+    .politics .divider,
+    .society .divider {
+        order: -1;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .business .business-left h2,
+    .politics .politics-left h2,
+    .society .society-left h2 {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 1185px) {
+    .header .header-right .heading-primary {
+        top: 420px;
+    }
+    .header .header-right .heading-primary--main,
+    .header .header-right .heading-primary--sub,
+    .header .header-right .heading-primary--tertiary {
+        left: 0;
+        font-size: 34px;
+        line-height: 39px;
+    }
+    .header .header-right .heading-primary--sub,
+    .header .header-right .heading-primary--tertiary {
+        margin-left: 0;
+    }
+    .header .header-right .heading-primary--tertiary {
+        top: 75px;
+        white-space: break-spaces;
+    }
+    .business .business-right .box,
+    .politics .politics-right .box,
+    .society .politics-right .box {
+        grid-gap: 70px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 840px) {
+    .header .header-right .heading-primary {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .business .business-right .box,
+    .politics .politics-right .box,
+    .society .politics-right .box {
+        grid-template-columns: 100%;
+    }
+    .business .business-right .box .item .date,
+    .politics .politics-right .box .item .date,
+    .society .society-right .box .item .date {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 35px;
+    }
+    .business .business-right .box .item a .link-text,
+    .politics .politics-right .box .item a .link-text,
+    .society .society-right .box .item a .link-text {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        max-width: unset;
+    }
+    .business .business-right .box .item a .arrow,
+    .politics .politics-right .box .item a .arrow,
+    .society .society-right .box .item a .arrow {
+        width: 96px;
+    }
+    .business .business-right .box .item .arrow .line::before,
+    .politics .politics-right .box .item .arrow .line::before,
+    .society .society-right .box .item .arrow .line::before {
+        height: 47px;
+        top: -193px;
+    }
+    .header .header-right .heading-primary--main {
+        font-size: 33px;
+        line-height: 38px;
+    }
+    .header .header-right .heading-primary {
+        transform: unset;
+    }
+    header .header-right .heading-primary--main {
+        margin-left: 0;
+    }
+    .business .business-right .box .item a .arrow,
+    .politics .politics-right .box .item a .arrow,
+    .society .society-right .box .item a .arrow {
+        width: 96px;
+    }
+    header.opinions .header-right h1 {
+        top: unset !important;
+        bottom: 40px;
+    }
+    header.opinions .header-right h1,
+    header.opinions .header-right h1 .heading-primary--main {
+        font-size: 75px;
+        line-height: 87px;
+    }
+}

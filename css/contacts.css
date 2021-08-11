@@ -1,0 +1,79 @@
+.contacts .contacts-right .box {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 676px));
+    grid-gap: 50px 20px;
+    margin-right: 100px;
+}
+.contacts .contacts-right .box .item:nth-child(3) {
+    grid-column: 1/-1;
+}
+.contacts .contacts-right .box .item:nth-child(4) {
+    display: flex;
+    align-items: center;
+}
+.contacts .contacts-right .box .item:nth-child(4) .input {
+    display: flex;
+    align-items: center;
+}
+.contacts .contacts-right .box .item:nth-child(5) .text,
+.contacts .contacts-right .box .item:nth-child(5) .text a {
+    font-size: 15px;
+    line-height: 24px;
+    color: #bdbdbd;
+    display: flex;
+}
+@media screen and (max-width: 1400px) {
+    .contacts {
+        grid-template-columns: 100%;
+        text-align: center;
+        row-gap: 30px;
+    }
+    .contacts .contacts-right {
+        display: contents;
+    }
+    .contacts .divider {
+        order: -1;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 60px;
+    }
+    .contacts .contacts-right .box {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 840px) {
+    h1, .header .header-right .heading-primary--main, .header .header-right .heading-primary--sub {
+        font-size: 101px;
+        line-height: 131px;
+    }
+    .header .header-right .heading-primary {
+        top: unset;
+        bottom: 70px;
+        left: 0;
+    }
+}
+@media screen and (max-width: 678px) {
+    .header .header-right .heading-primary {
+        bottom: 50px;
+        transform: unset;
+        left: -14px;
+    }
+    h1, .header .header-right .heading-primary--main, .header .header-right .heading-primary--sub {
+        font-size: 50px;
+        line-height: 57px;
+    }
+    .contacts .contacts-right .box {
+        grid-template-columns: 100%;
+    }
+    .contacts .contacts-right .box .item:nth-child(5) {
+        grid-row: 4/4;
+    }
+    .contacts .contacts-right .box .item:nth-child(5) .text, .contacts .contacts-right .box .item:nth-child(5) .text a {
+        display: block;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .contacts .contacts-right .box .item:nth-child(4) {
+        justify-content: center;
+    }
+}
